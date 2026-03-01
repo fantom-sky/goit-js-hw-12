@@ -1,0 +1,108 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    max-width: 371px;
+    height: 40px;
+    gap: 8px;
+    /* height: 256px; */
+    /* background: #fff; */
+    padding: 0 24px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.form input {
+    display: inline-flex;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 272px;
+    height: 40px;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: #4e75ff;
+}
+
+.form button {
+    max-width: 91px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 24px;
+    max-width: 1128px;
+    margin: 0 auto;
+    background: #fff;
+    /* height: 848px; */
+}
+
+.gallery-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% - 24px * 2) / 3);
+    overflow: hidden;
+    min-width: 360px;
+    height: 200px;
+    border: 1px solid #808080;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    transform: scale(1.044);
+}
+
+.gallery-image {
+    /* max-width: 100%; */
+    object-fit: cover;
+}
+
+.gallery-stat-list {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    /* margin: 0 auto; */
+    width: 100%;
+    padding: 4px 24px;
+    max-height: 48px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-stat-item {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.33333;
+    letter-spacing: 0.07em;
+    color: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.js-load-more {
+    margin-top: 32px;
+    max-width: 125px;
+}
+
+

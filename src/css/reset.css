@@ -25,10 +25,37 @@ a {
 
 button {
   cursor: pointer;
+  vertical-align: middle;
+  font-family: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  border: 1px solid transparent;
+  background-color: #4e75ff;
+  color: white;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
 
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  vertical-align: middle;
 }
